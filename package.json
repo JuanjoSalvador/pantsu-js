@@ -1,0 +1,27 @@
+{
+  "name": "pantsu-js",
+  "version": "1.0.2",
+  "description": "NyaaPantsu API wrapper for JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard --verbose --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuanjoSalvador/Pantsu-js.git"
+  },
+  "keywords": [
+    "nyaapantsu",
+    "nyaa",
+    "torrent"
+  ],
+  "author": "Juanjo Salvador <juanjosalvador@netc.eu> (http://juanjosalvador.me)",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.16.2"
+  },
+  "devDependencies": {
+    "mocha": "^4.0.1",
+    "standard": "^10.0.3"
+  }
+}
