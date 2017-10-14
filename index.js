@@ -1,9 +1,11 @@
 const axios = require('axios')
+const utils = require('utils/utils.js')
+
 const BASE_URL = 'http://nyaa.pantsu.cat/api/'
 
-const search = (query, limit) => {
+const search = (queryObj) => {
   return new Promise((resolve, reject) => {
-    axios.get(BASE_URL + 'search?q=' + query + '&limit=' + limit)
+    axios.get(BASE_URL + 'search?' + utils.queryBuilder(queryObj))
         .then(function (response) {
           resolve(response.data)
         })
